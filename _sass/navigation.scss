@@ -1,0 +1,36 @@
+nav {
+	font-weight: bold;
+	font-size: .9rem;
+	width: 100%;
+
+	.company-name {
+		border: 2px solid #fff;
+		padding: 10px;
+	}
+
+	a {
+		display: flex;
+		justify-content: flex-end;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px;
+		border-bottom: 3px solid rgba(255, 255, 255, 0);
+		color: rgb(255, 255, 255);
+		transition: .2s ease-in-out;
+	}
+
+	a:hover {
+
+		border-bottom: 3px solid rgb(255, 255, 255);
+		color: #fff;
+	}
+
+	a:visited {
+		color: #fff;
+	}
+
+	a.active {
+		color: #fff;
+	}
+
+}
