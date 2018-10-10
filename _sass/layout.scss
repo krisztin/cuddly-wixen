@@ -76,11 +76,26 @@
 }
 
 header {
-	background-image: url(../images/headbg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: $brand-color;
+	position: relative;
+	z-index: 1;
 	color: #fff;
 	padding-top: 1rem;
+	overflow: hidden;
+
+	&:before {
+		background: #fff;
+		position: absolute;
+		right: 0;
+		bottom: -1rem;
+		left: 0;
+		content: "";
+		display: block;
+		height: 44%;
+		transform: skewY(-10deg);
+		transform-origin: 100%;
+		z-index: -1;
+	}
 }
 
 .tagline {
