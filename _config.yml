@@ -2,7 +2,7 @@
 # Site
 
 title: krisztiN
-url: "https://www.kriszt.in"
+url: "https://kriszt.in"
 ? baseurl
 ? google_analytics_key
 
@@ -15,7 +15,7 @@ author:
 social:
   name: krisztiN
   links:
-    - https://www.kriszt.in
+    - https://kriszt.in
 
 # -----
 # Build
