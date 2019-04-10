@@ -29,6 +29,10 @@ main {
   /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
+figcaption {
+  padding-bottom: 2 * $base-font-size;
+}
+
 /**
  * Wrapper
  */
