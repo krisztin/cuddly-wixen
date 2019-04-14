@@ -26,7 +26,6 @@ body {
 
 main {
   display: block;
-  /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 figcaption {
@@ -137,6 +136,18 @@ h1 {
 h2,
 h3 {
   color: $colour-primary;
+}
+
+h1 {
+  font-size: $base-font-size * 2.2;
+}
+
+h2 {
+  font-size: $base-font-size * 2;
+}
+
+h3 {
+  font-size: $base-font-size * 1.8;
 }
 
 /**
