@@ -3,21 +3,22 @@
 
 // Typography
 $base-font-family: 'Roboto', sans-serif !default;
-$base-font-size: 16px !default;
+$base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.7 !default;
+$base-line-height: 1.5 !default;
 
 // Colours
 $colour-primary: #523a7c !default;
 $colour-primary--dark: #3a2957 !default;
 $colour-primary--light: #8961ce !default;
 $colour-secondary: #ffd60c !default;
-$colour-white: #fdfdfd !default;
+$colour-blue: #0db6ff !default;
+$colour-pink: #fe08d7 !default;
+$colour-black: #373030 !default;
 
 $text-color: #212121 !default;
-$text-color-light: #fff !default;
-$text-link-color: $colour-primary;
+$text-colour-light: #fdfdfd !default;
 
 $colour-grey: #949494 !default;
 $colour-grey--light: lighten($colour-grey, 30%) !default;
@@ -51,7 +52,7 @@ $border-radius: 5px !default;
   clear: both;
 }
 
-@mixin skew($degree: -4deg) {
+@mixin skew($degree: -3deg) {
   -webkit-transform: skewY($degree);
   transform: skewY($degree);
   -webkit-transform-origin: 0;
