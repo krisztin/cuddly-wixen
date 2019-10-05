@@ -6,6 +6,11 @@ url: https://kriszt.in
 logo: /siteicon.png
 description: Front-end developer with UX and UI design experience
 
+# Collections
+collections:
+  case_studies:
+    output: true
+
 # Social
 github_username: krisztin
 linkedin_username: nkriszti

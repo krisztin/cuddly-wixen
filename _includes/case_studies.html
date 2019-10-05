@@ -1,0 +1,22 @@
+{% for study in site.case_studies %}
+<article
+  class="flex-container pad-tb {% if forloop.index == 2 %} flex-reverse {% endif %}"
+>
+  <div class="flex-item two-col">
+    <h3>{{ study.title }}</h3>
+    {{ study.excerpt }}
+    <div class="inline">
+      <a
+        class="btn btn-light"
+        href="{{ study.url }}"
+        target="_self"
+        aria-label="Read {{ study.title }} case study"
+        >Case study</a
+      >
+    </div>
+  </div>
+  <div class="flex-item two-col">
+    <img src="{{ study.img }}" alt="" />
+  </div>
+</article>
+{% endfor %}
