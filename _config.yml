@@ -20,7 +20,13 @@ defaults:
   - scope:
       path: "index.html"
     values:
-      layout: "default"
+# Plugins
+plugins:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
