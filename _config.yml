@@ -2,7 +2,7 @@
 title: krisztiN
 url: https://kriszt.in
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+# SEO
 logo: /siteicon.png
 description: Front-end developer with UX and UI design experience
 
@@ -14,17 +14,20 @@ collections:
 # Social
 github_username: krisztin
 linkedin_username: nkriszti
+codepen_username: krisztiiin
 
 # Build
 permalink: /:category/:title
 defaults:
   - scope:
-      path: ""
+      path: ''
     values:
-      layout: "page"
+      layout: 'page'
   - scope:
-      path: "index.html"
+      path: 'index.html'
     values:
+      layout: 'default'
+
 # Plugins
 plugins:
   - jekyll-archives
