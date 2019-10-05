@@ -1,0 +1,289 @@
+/**
+ * Basic styling
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
+  color: $text-color;
+  background-color: $colour-white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  min-height: 100vh;
+  @include flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main {
+  display: block;
+}
+
+figcaption {
+  padding-bottom: 2 * $base-font-size;
+}
+
+/**
+ * Wrapper
+ */
+
+.wrapper {
+  max-width: $content-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($mobile) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  li {
+    max-width: $text-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.wrapper-skinny {
+  max-width: $content-width/2;
+}
+
+/**
+ * Typography
+ */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $base-font-weight * 2;
+}
+
+h2.text-jumbo {
+  font-size: $base-font-size * 2;
+  max-width: $content-width;
+
+  @include media-query($mobile) {
+    font-size: $base-font-size * 3;
+  }
+}
+
+h1 {
+  background: $colour-primary;
+  color: $colour-secondary;
+  display: inline;
+}
+
+h2,
+h3 {
+  color: $colour-primary;
+}
+
+h1 {
+  font-size: $base-font-size * 2.2;
+}
+
+h2 {
+  font-size: $base-font-size * 2;
+}
+
+h3 {
+  font-size: $base-font-size * 1.8;
+}
+
+/**
+ * Images
+ */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: $small-font-size;
+  font-style: italic;
+  color: $colour-grey--dark;
+  text-align: center;
+}
+
+/**
+ * Links
+ */
+
+a {
+  color: $colour-primary;
+  text-decoration: none;
+
+  &:visited {
+    color: $colour-primary;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Buttons
+ */
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  position: relative;
+  font-weight: bold;
+  display: inline-block;
+  padding: $base-font-size;
+  margin: $base-font-size 0;
+  margin-right: $base-font-size;
+  min-width: $base-font-size * 7;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:active {
+    background: $colour-secondary;
+    color: $colour-primary--light;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .btn {
+    min-width: $base-font-size;
+  }
+}
+
+/* Top and bottom stripe decoration in 2ndry colour */
+.btn-light,
+.btn-light--ghost,
+.cta {
+  &:before,
+  &:after {
+    @include transition;
+    border: 0 solid transparent;
+    content: '';
+    height: 24px;
+    position: absolute;
+    width: 60%;
+  }
+
+  &:before {
+    border-top: 5px solid $colour-secondary;
+    left: 0px;
+    top: -4px;
+  }
+
+  &:after {
+    border-bottom: 5px solid $colour-secondary;
+    bottom: -3px;
+    right: 0px;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+a.btn-light {
+  background: $colour-primary;
+  color: $text-color-light;
+
+  &:visited,
+  i {
+    color: $text-color-light;
+  }
+
+  &:hover {
+    color: $text-color-light;
+    background: $colour-primary--dark;
+  }
+}
+
+.btn-light--ghost {
+  border: $colour-primary 3px solid;
+  color: $colour-primary;
+  padding: 14px;
+}
+
+a.btn-light--text {
+  @include transition;
+  padding: 14px;
+  display: inline-block;
+
+  &:hover {
+    @include skew(-3deg);
+  }
+}
