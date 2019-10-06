@@ -35,7 +35,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-compress-images
 
 exclude:
   - Gemfile
