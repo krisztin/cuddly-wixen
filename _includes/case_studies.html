@@ -1,22 +1,45 @@
-{% for study in site.case_studies %}
+{% for study in site.case_studies %} {% if study.category == "problem"%}
 <article
-  class="flex-container pad-tb {% if forloop.index == 2 %} flex-reverse {% endif %}"
+  class="flex-container pad-tb {% if forloop.index == 1 %} flex-reverse {% endif %} relativity"
 >
   <div class="flex-item two-col">
-    <h3>{{ study.title }}</h3>
+    <div
+      class="
+      {% if forloop.index == 1 %}
+       stripe-right--secondary
+      {% else %}
+        stripe-left--secondary
+      {% endif %}"
+    ></div>
+    <h3>
+      <a href="{{ study.url }}" aria-label="case study" target="_self"
+        >{{ study.title }}
+      </a>
+    </h3>
     {{ study.excerpt }}
     <div class="inline">
       <a
         class="btn btn-light"
         href="{{ study.url }}"
         target="_self"
-        aria-label="Read {{ study.title }} case study"
+        aria-hidden="true"
         >Case study</a
       >
     </div>
   </div>
   <div class="flex-item two-col">
-    <img src="{{ study.img }}" alt="" />
+    <a href="{{ study.url }}" aria-hidden="true" target="_self">
+      <img src="{{ site.url }}/{{ study.img }}" alt="" />
+    </a>
   </div>
 </article>
-{% endfor %}
+{%else%}
+<article class="pad-tb--lg">
+  <div class="stripe--secondary"></div>
+  <a href="{{ study.url }}" aria-hidden="true" target="_self">
+    <h3>{{ study.title }}</h3>
+    {{ study.excerpt }}
+    <img src="{{ site.url }}/{{ study.img }}" alt="" />
+  </a>
+</article>
+{% endif %} {% endfor %}
