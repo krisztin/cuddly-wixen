@@ -52,6 +52,8 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -78,6 +80,9 @@
 }
 
 .flex-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 
   img {
