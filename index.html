@@ -5,17 +5,13 @@ layout: default
 exclude: true
 ---
 
-{% include bits.html%}
-
-<section>
-  {% include case-studies.html -%}
+<section class="wrapper pad-tb">
+  <h2 class="text-jumbo">Case Studies</h2>
+  {% include case_studies.html %}
 </section>
 
-<section class="mar-tb--lg aligncentre wrapper">
-  <div class="pad-tb cta" id="contact">
-    <h2>Contact me</h2>
-    <p><em>If you are interested in working with me, have questions or just want me to send you a picture of a cute
-        kitten get in touch.</em></p>
-    <a href="mailto:me@kriszt.in">me@kriszt.in</a>
+<section class="mar-tb aligncentre wrapper">
+  <div id="contact">
+    <h2>Contact <a href="mailto:me@kriszt.in">me@kriszt.in</a></h2>
   </div>
 </section>
