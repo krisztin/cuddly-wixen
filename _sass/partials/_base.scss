@@ -45,22 +45,22 @@ figcaption {
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
-
-  @extend %clearfix;
-  @include media-query($mobile-width) {
-    h2,
-    h3,
-    h4,
-    h5,
-    p,
-    li {
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  li {
+    max-width: $text-width;
+    margin-right: auto;
+    margin-left: auto;
+    @include media-query($mobile-width) {
       padding-right: 1rem;
       padding-left: 1rem;
-      max-width: $text-width;
-      margin-right: auto;
-      margin-left: auto;
     }
   }
+
+  @extend %clearfix;
 }
 
 .wrapper-skinny {
