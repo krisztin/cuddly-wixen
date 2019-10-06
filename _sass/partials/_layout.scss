@@ -350,8 +350,18 @@ header {
   flex: 1;
 }
 
-.page-heading {
-  @include relative-font-size(2);
+/* Figma frames */
+iframe {
+  @include media-query($mobile) {
+    display: none;
+  }
+}
+
+.figma-link {
+  display: inline;
+  @media only screen and (min-width: $mobile) {
+    display: none;
+  }
 }
 
 /**
