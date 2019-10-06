@@ -4,6 +4,7 @@ _site
 .jekyll-metadata
 Gemfile.lock
 _drafts
+_compress_images_cache.yml
 
 ### VS Code ###
 .vscode/
