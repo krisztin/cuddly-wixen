@@ -6,7 +6,7 @@ $base-font-family: 'Roboto', sans-serif !default;
 $base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.7 !default;
 
 // Colours
 $colour-primary: #523a7c !default;
@@ -25,9 +25,11 @@ $colour-grey--light: lighten($colour-grey, 30%) !default;
 $colour-grey--dark: darken($colour-grey, 25%) !default;
 
 // Alignment & Spacings
-$spacing-unit: 30px !default;
+$spacing-unit: 36px !default;
 $content-width: 1100px !default;
-$text-width: 900px;
+$text-width: 900px !default;
+$mobile-width: $content-width + ($base-font-size * 1.5);
+/*because of full-width images, padding is added on content, not the wrapper which needs to be done on widths smaller than content-width*/
 
 // Media query breakpoints
 $mobile: 600px !default;
