@@ -12,7 +12,7 @@
   @include media-query($laptop) {
     padding-bottom: 2rem;
     padding-top: 2rem;
-}
+  }
 }
 
 .pad-tb {
@@ -21,7 +21,7 @@
   @include media-query($laptop) {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-}
+  }
 }
 
 .pad-tb--lg {
@@ -30,7 +30,7 @@
   @include media-query($laptop) {
     padding-bottom: 2rem;
     padding-top: 2rem;
-}
+  }
 }
 
 /*
@@ -194,10 +194,14 @@ header {
   i {
     font-weight: 100;
   }
-  .wrapper p {
+  .wrapper p,
+  h1,
+  nav {
     max-width: $content-width;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
-  }
+}
 
 .site-title {
   @include relative-font-size(1.625);
@@ -360,6 +364,9 @@ Stripes
   }
 }
 
+/******
+* Main
+******/
 
 .page-content {
   padding-bottom: $spacing-unit;
