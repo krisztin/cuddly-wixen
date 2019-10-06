@@ -176,11 +176,23 @@ img {
   height: auto;
 }
 
+figure {
+  position: relative;
+}
+
 figcaption {
-  font-size: $small-font-size;
-  font-style: italic;
-  color: $colour-grey--dark;
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: $colour-secondary;
+  @include skew;
+  top: 10%;
+  position: absolute;
+  @include media-query($mobile) {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+}
 }
 
 /**
