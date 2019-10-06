@@ -167,6 +167,10 @@ ul {
   list-style: square inside url('/assets/img/ul.png');
 }
 
+.tight {
+  margin-top: 0;
+}
+
 /**
  * Images
  */
@@ -217,14 +221,6 @@ a {
 
   &:hover {
     text-decoration: underline;
-    p {
-      text-decoration: none;
-    }
-  }
-  p {
-    color: $text-color;
-    font-weight: normal;
-    text-decoration: none;
   }
 }
 

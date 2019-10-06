@@ -34,12 +34,12 @@
   </div>
 </article>
 {%else%}
-<article class="pad-tb--lg">
-  <div class="stripe--secondary"></div>
+<article class="pad-tb">
   <a href="{{ study.url }}" aria-hidden="true" target="_self">
-    <h3>{{ study.title }}</h3>
-    {{ study.excerpt }}
     <img src="{{ site.url }}/{{ study.img }}" alt="" />
+    <h3 class="tight">{{ study.title }}</h3>
   </a>
+  {{ study.excerpt }}
+  <div class="stripe-left--secondary"></div>
 </article>
 {% endif %} {% endfor %}
