@@ -461,3 +461,12 @@ nav.just-space-between {
 footer {
   background: $colour-grey--light;
 }
+
+#contact a {
+  border-bottom: 8px solid $colour-secondary;
+  &:hover {
+    background-color: $colour-primary;
+    color: $colour-secondary;
+    text-decoration: none;
+  }
+}
