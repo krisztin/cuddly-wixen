@@ -50,7 +50,8 @@ figcaption {
   h4,
   h5,
   p,
-  li {
+  li,
+  nav {
     max-width: $text-width;
     margin-right: auto;
     margin-left: auto;
@@ -59,7 +60,6 @@ figcaption {
       padding-left: 1rem;
     }
   }
-
   @extend %clearfix;
 }
 

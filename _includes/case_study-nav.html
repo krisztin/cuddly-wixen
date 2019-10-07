@@ -21,25 +21,25 @@
 
 <div class="wrapper">
   <div class="stripe-left--black"></div>
-  <nav class="pad-tb flex-container just-even">
-    <div class="flex-item btn-prev card">
-      {% if prevurl %}
+  <nav class="pad-tb flex-container just-space-between">
+    {% if prevurl %}
+      <div class="flex-item btn-prev card">
         <a href="{{ prevurl }}" class="row flex-container">
             <svg title="previous project" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35.905 5L14 25.697 35.905 45" stroke="#5F2FB5" stroke-width="10"/></svg>
           <p class="text">{{ prevtitle l}}</p>
         </a>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
     <a href="{{ site.url }}" title="Home" class="flex-item aligncentre btn-home" aria-label="home">
       <svg alt="go to home" aria-hidden="true"  width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="25" fill="#fff"/><path d="M13 21h24v19h-8.47v-8.136h-7.06V40H13V21z" fill="#5F2FB5"/><path d="M25 8.5L37 21H13L25 8.5z" fill="#FFBB0D"/></svg>
     </a>
-    <div class="flex-item btn-next card">
-      {% if nexturl %}
+    {% if nexturl %}
+      <div class="flex-item btn-next card">
         <a href="{{ nexturl }}" class="row flex-container">
           <p class="text">{{ nexttitle }}</p>
           <svg title="next project" class="" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 45l21.905-20.697L14 5" stroke="#5F2FB5" stroke-width="10"/></svg>
         </a>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   </nav>
 </div>
