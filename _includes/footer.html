@@ -5,42 +5,7 @@
     </div>
   </section>
   <div class="wrapper aligncentre">
-    <a
-      class="page-link"
-      href="https://www.linkedin.com/in/nkriszti/"
-      target="_blank"
-      aria-label="linkedin profile"
-      rel="noopener"
-    >
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a
-      class="page-link"
-      href="https://github.com/krisztin"
-      target="_blank"
-      aria-label="github profile"
-      rel="noopener"
-    >
-      <i class="fab fa-github"></i> Github
-    </a>
-    <a
-      class="page-link"
-      href="https://codepen.io/krisztiiin/"
-      target="_blank"
-      aria-label="codepen profile"
-      rel="noopener"
-    >
-      <i class="fab fa-codepen"></i> Codepen </a
-    ><br />
-    {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
-    "path", path | first -%} {%- if my_page.title -%} {%- unless my_page.exclude
-    -%}
-    <a class="page-link" href="{{ my_page.url | relative_url }}">{{
-      my_page.title | escape
-    }}</a
-    ><br />
-    {%- endunless -%} {%- endif -%} {%- endfor -%} {% include
-    photo-credits.html%}
+    {% include social-links.html %} {% include photo-credits.html%}
     <p>&#60;/k&#62;</p>
   </div>
 </footer>
