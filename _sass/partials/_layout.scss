@@ -190,10 +190,7 @@ header {
   p:last-child {
     padding-bottom: 4rem;
   }
-
-  i {
-    font-weight: 100;
-  }
+  
   .wrapper p,
   h1,
   nav {
@@ -218,6 +215,10 @@ header {
   }
 }
 
+/******
+* Nav
+*****/
+
 .site-nav {
   @include flex;
   -webkit-box-pack: justify;
@@ -240,10 +241,6 @@ header {
     &:hover {
       border-bottom: 5px solid $colour-secondary;
     }
-
-    i {
-      font-size: 1.5rem;
-    }
   }
 
   .site-links {
@@ -251,6 +248,40 @@ header {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+  }
+}
+
+@include media-query(500px) {
+  .site-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    .site-links {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .page-link {
+      padding: 1rem 1rem 0 1rem;
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
+
+    .social-links {
+      margin: 0.5rem 1rem;
+      width: 100%;
+      @include flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -340,43 +371,6 @@ Stripes
     $colour: $colour-black
   );
   position: relative;
-}
-
-/******
-* Nav
-*****/
-
-@include media-query(500px) {
-  .site-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-
-    .site-links {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-
-    .page-link {
-      padding-top: 1rem;
-      margin-left: 0;
-      font-size: 1.5rem;
-    }
-
-    .social-links {
-      width: 100%;
-      @include flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-    }
-  }
 }
 
 /******

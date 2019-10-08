@@ -206,6 +206,20 @@ figcaption {
   vertical-align: bottom;
 }
 
+.svg-social-icon {
+  width: 1.5rem;
+  fill: $colour-secondary;
+}
+
+footer .svg-social-icon {
+  margin: 0.5rem;
+  padding: 1rem;
+  fill: $colour-primary;
+  &:hover {
+    fill: $colour-pink;
+  }
+}
+
 /**
  * Links
  */
