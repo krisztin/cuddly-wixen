@@ -62,21 +62,21 @@ $border-radius: 5px !default;
 }
 
 @mixin decor(
-  $top: '',
-  $right: '',
-  $bottom: '',
-  $left: '',
-  $height: '',
-  $width: '',
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $height: null,
+  $width: null,
   $colour: $colour-secondary
 ) {
-  top: unquote($top);
-  bottom: unquote($bottom);
-  left: unquote($left);
-  right: unquote($right);
-  height: unquote($height);
-  width: unquote($width);
-  background-color: unquote($colour);
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  height: $height;
+  width: $width;
+  background-color: $colour;
   position: absolute;
 }
 
