@@ -31,3 +31,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Categories', name: 'categories', widget: 'string', required: false }
       - { label: 'Image', name: 'img', widget: 'image', required: false }
+  - name: 'page'
+    label: 'Pages'
+    sort: 'date:desc'
+    create: false
