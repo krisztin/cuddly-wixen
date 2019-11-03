@@ -274,9 +274,10 @@ button {
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 1130px) {
   .btn {
-    min-width: 1rem;
+    padding: 1.5rem 2rem;
+    margin-left: 1rem;
   }
 }
 
