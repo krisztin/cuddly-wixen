@@ -184,7 +184,7 @@ header {
 
   p,
   h2 {
-    color: $text-colour-light;
+    color: $text-colour--light;
   }
 
   p:last-child {
@@ -301,11 +301,7 @@ Stripes
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(
-    150deg,
-    $colour-primary--dark 15%,
-    $colour-primary--light 70%
-  );
+  background: linear-gradient(150deg, $colour-primary--dark 15%, $colour-primary--light 70%);
 }
 
 .stripes span {
@@ -364,12 +360,7 @@ Stripes
 
 .stripe-left--black {
   @include skew(-1.5deg);
-  @include decor(
-    $top: -10px,
-    $height: 50px,
-    $width: 40%,
-    $colour: $colour-black
-  );
+  @include decor($top: -10px, $height: 50px, $width: 40%, $colour: $colour-black);
   position: relative;
 }
 
@@ -410,7 +401,7 @@ nav.just-space-between {
 
 .btn-prev,
 .btn-next {
-  background: $text-colour-light;
+  background: $text-colour--light;
   max-width: 300px;
   min-width: 200px;
   padding: 1rem;
