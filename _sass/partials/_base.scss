@@ -162,6 +162,7 @@ small {
   font-weight: 600;
   border-left: 15px solid $colour-secondary;
   padding-left: 1rem;
+  margin: 2rem 0;
 }
 
 ul {
@@ -182,8 +183,29 @@ img {
   padding: 1.5rem 0;
 }
 
+img.emoji {
+  padding: 0;
+  width: 1rem;
+}
+
 figure {
   position: relative;
+}
+
+figure.img--small {
+  max-width: $content-width/2;
+  margin: auto;
+}
+
+figure.img--xsmall {
+  max-width: $content-width/4;
+  margin: auto;
+}
+
+figure.nopad {
+  img {
+    padding: 0;
+  }
 }
 
 figcaption {
