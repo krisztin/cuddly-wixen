@@ -9,13 +9,14 @@ exclude: true
   {% for tag in site.tags %}
   <div class="tag-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h4 class="tag-head"><img src="{{ site.url }}/assets/img/tag.svg" alt="" />{{ tag_name }}</h4>
-    <a name="{{ tag_name | slugize }}"></a>
+    <h2 class="tag-head">
+      <img src="{{ site.url }}/assets/img/tag.svg" alt="" aria-hidden="true" /> {{ tag_name }}
+    </h2>
     {% for post in site.tags[tag_name] %}
     <article class="tagpage">
-      <h4>
+      <p>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h4>
+      </p>
     </article>
     {% endfor %}
   </div>
