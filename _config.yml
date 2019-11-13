@@ -4,7 +4,7 @@ url: https://www.kriszt.in
 
 # SEO
 logo: /siteicon.png
-description: Front-end developer with UX and UI design experience
+description: Front-end Developer with UX Design experience
 
 # Collections
 collections:
@@ -17,7 +17,7 @@ linkedin_username: nkriszti
 codepen_username: krisztiiin
 
 # Build
-permalink: /:category/:title
+permalink: /blog/:title
 defaults:
   - scope:
       path: ''
@@ -35,6 +35,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 exclude:
   - Gemfile
