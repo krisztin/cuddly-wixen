@@ -1,0 +1,23 @@
+---
+title: Tags
+layout: page
+permalink: /tags/
+exclude: true
+---
+
+<div class="tag-listing wrapper">
+  {% for tag in site.tags %}
+  <div class="tag-group">
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <h4 class="tag-head"><img src="{{ site.url }}/assets/img/tag.svg" alt="" />{{ tag_name }}</h4>
+    <a name="{{ tag_name | slugize }}"></a>
+    {% for post in site.tags[tag_name] %}
+    <article class="tagpage">
+      <h4>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h4>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
