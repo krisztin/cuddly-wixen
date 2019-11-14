@@ -1,25 +1,31 @@
 ---
-layout: page
+layout: default
 ---
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <p class="post-meta">
-      <span class="post-tags">
-        <img src="{{ site.url }}/assets/img/tag.svg" title="tags" alt="" aria-hidden="true" /> | {%
-        if post %} {% assign tags = post.tags %} {% else %} {% assign tags = page.tags %} {% endif
-        %} {% for tag in tags %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag | slugize }}" class="post-tag">{{ tag }}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
-      </span>
-    </p>
-  </header>
-
-  <div class="e-content" itemprop="articleBody">
+{% assign tags = page.tags %}
+<article itemscope itemtype="http://schema.org/BlogPosting" class="wrapper pad-tb">
+  <p class="post-meta">
+    <span class="post-tags {% if page.tags contains 'IKEA' %}ikea{% endif %}">
+      <img src="{{ site.url }}/assets/img/tag.svg" title="tags" alt="" aria-hidden="true" /> | {%
+      for tag in tags %}
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugize }}" class="post-tag">{{ tag }}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
+    </span>
+  </p>
+  <div
+    class="wrapper pad-tb {% if page.tags contains 'IKEA' %}ikea{% endif %}"
+    itemprop="articleBody"
+  >
     {{ content }}
   </div>
-
-  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+<nav class="wrapper aligncentre pad-tb post-bottom-nav">
+  <a href="{{ site.url }}/blog/" target="_self" aria-hidden="true">
+    <svg class="btn-home" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="25" fill="#fff" />
+      <path d="M13 21h24v19h-8.47v-8.136h-7.06V40H13V21z" fill="#5F2FB5" />
+      <path d="M25 8.5L37 21H13L25 8.5z" fill="#FFBB0D" />
+    </svg>
+  </a>
+  <p><a href="{{ site.url }}/blog/" target="_self">Back to the blog homepage</a></p>
+</nav>
