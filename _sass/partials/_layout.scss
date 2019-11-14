@@ -431,6 +431,14 @@ nav.just-space-between {
   }
 }
 
+.post-bottom-nav .btn-home {
+  background-color: $colour-secondary;
+}
+
+.post-bottom-nav p a {
+  padding: 1rem;
+}
+
 .card {
   position: relative;
   top: 0px;
@@ -463,12 +471,19 @@ nav.just-space-between {
   background-color: $colour-primary;
   color: $text-colour--light;
   border-radius: 5px;
+  &:visited {
+    color: $text-colour--light;
+  }
   &:hover {
     background-color: $colour-secondary;
     color: $text-colour;
   }
-  &:visited {
-    color: $text-colour--light;
+}
+
+.ikea .post-tag {
+  background-color: #0051ba;
+  &:hover {
+    background-color: $colour-secondary;
   }
 }
 
