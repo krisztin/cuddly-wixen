@@ -16,7 +16,7 @@ title: Think of the users
         {% endfor %}
         </span>
         </p>
-        {{ post.excerpt }}
+        <p>{{ post.excerpt }}</p>
     </article>
 {% endfor %}
 </div>
