@@ -206,6 +206,11 @@ figure.img--xsmall {
   margin: auto;
 }
 
+figure.img--mobile {
+  max-width: 350px;
+  margin: auto;
+}
+
 figure.nopad {
   img {
     padding: 0;
