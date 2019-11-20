@@ -12,24 +12,18 @@
       {% endif %}"
     ></div>
     <h3>
-      <a href="{{ study.url }}" aria-label="case study" target="_self"
-        >{{ study.title }}
-      </a>
+      <a href="{{ study.url }}" aria-label="case study" target="_self">{{ study.title }} </a>
     </h3>
     {{ study.excerpt }}
     <div class="inline">
-      <a
-        class="btn btn-light"
-        href="{{ study.url }}"
-        target="_self"
-        aria-hidden="true"
+      <a class="btn btn-light" href="{{ study.url }}" target="_self" aria-hidden="true"
         >Case study</a
       >
     </div>
   </div>
   <div class="flex-item two-col">
     <a href="{{ study.url }}" aria-hidden="true" target="_self">
-      <img src="{{ site.url }}/{{ study.img }}" alt="" />
+      <img class="case-img" src="{{ site.url }}/{{ study.img }}" alt="" />
     </a>
   </div>
 </article>

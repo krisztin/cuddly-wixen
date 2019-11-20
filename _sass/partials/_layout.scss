@@ -380,6 +380,18 @@ Stripes
   flex: 1;
 }
 
+.case-img {
+  margin-left: 3rem;
+  max-width: calc(100% - 3rem);
+  width: 90%;
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
 /* Figma frames */
 iframe {
   @include media-query($mobile) {
