@@ -60,18 +60,6 @@
 .flex-item {
   min-width: 300px;
 
-  img {
-    margin-left: 3rem;
-    max-width: calc(100% - 3rem);
-    width: 90%;
-
-    @media screen and (max-width: 650px) {
-      width: 100%;
-      max-width: 100%;
-      margin-left: 0;
-    }
-  }
-
   @media screen and (max-width: 650px) {
     margin: auto;
     max-width: calc(100% - 1rem);
@@ -469,16 +457,53 @@ nav.just-space-between {
  * Posts
  */
 
-.blog-listing h3 {
-  margin-top: 1rem;
+.posts {
+  margin: 0 auto;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  h3 {
+    margin-top: 0;
+  }
 }
 
-.post-meta {
-  color: $colour-grey--dark;
-  font-size: 0.8rem;
+.post {
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  min-width: 400px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 36px $base-font-size;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.31);
+  .post-meta {
+    padding: $base-font-size;
+  }
+
+  .post-meta:before {
+    background: $colour-secondary;
+    content: '';
+    display: block;
+    height: 3.5%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    top: -1.5%;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 420px) {
+    min-width: 220px;
+  }
 }
 
 .post-tag {
+  font-size: 0.8rem;
   padding: 3px 8px;
   background-color: $colour-primary;
   color: $text-colour--light;
@@ -502,12 +527,6 @@ nav.just-space-between {
 a.post-tag {
   border-bottom: none;
   font-weight: normal;
-}
-
-.blog-listing {
-  background-color: $colour-grey--light;
-  padding: 1rem;
-  margin: 2rem 0;
 }
 
 /**
