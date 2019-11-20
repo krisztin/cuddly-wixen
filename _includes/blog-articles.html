@@ -1,0 +1,23 @@
+{%- for post in site.posts -%} {% if post %} {% assign tags = post.tags %}{% endif %}
+<article class="flex-item post">
+  <div class="img-wrapper">
+    <a href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+      <img src="{{ post.img }}" alt="" />
+    </a>
+  </div>
+  <div class="post-meta">
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+    <p>
+      <span class="post-tags"
+        ><img src="{{ site.url }}/assets/img/tag.svg" title="tags" alt="" aria-hidden="true" /> | {%
+        for tag in tags %}
+        <a href="{{site.baseurl}}/tags/#{{tag|slugize}}" class="post-tag">{{tag}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
+      </span>
+    </p>
+    <p>{{ post.excerpt }}</p>
+  </div>
+</article>
+{% endfor %}
