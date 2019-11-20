@@ -1,5 +1,6 @@
 ---
 layout: post
+img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1574253223/krisztin/thumb-stravarec_hmuyff.png
 title: 'Strava tap dance'
 date: 2017-08-01 11:15:06 +0100
 tags: [Strava, rant, app, a11y]
