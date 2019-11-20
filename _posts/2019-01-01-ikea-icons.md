@@ -1,6 +1,6 @@
 ---
 layout: post
-img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1574253223/krisztin/ikea-series1_uyfwv3.png
+img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1574285277/krisztin/thumb-ikea-series1_idhxpq.png
 title: 'Icons are off the menu - IKEA Facelift #1'
 date: 2017-08-01 11:15:06 +0100
 tags: [IKEA, rant, web, a11y]
