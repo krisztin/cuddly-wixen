@@ -1,6 +1,6 @@
 {% for study in site.case_studies %} {% if study.category == "problem"%}
 <article
-  class="flex-container pad-tb {% if forloop.index == 1 %} flex-reverse {% endif %} relativity"
+  class="flex-container {% if forloop.index == 1 %} flex-reverse pad-tb {% else %} pad-tb--lg mar-tb {% endif %} relativity"
 >
   <div class="flex-item two-col">
     <div
