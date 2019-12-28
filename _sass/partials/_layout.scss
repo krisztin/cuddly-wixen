@@ -167,7 +167,6 @@
 .header--main {
   min-height: 300px;
 
-  h1,
   a,
   a:visited,
   i,
@@ -176,25 +175,12 @@
     color: $colour-secondary;
   }
 
-  p,
-  h2 {
-    color: $text-colour--light;
-  }
-
   p:last-child {
     padding-bottom: 4rem;
   }
-
-  .wrapper p,
-  h1,
-  nav {
-    max-width: $content-width;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
 }
 
-.site-title {
+a.site-logo {
   @include relative-font-size(1.625);
   @include skew;
   font-weight: bold;
@@ -207,6 +193,15 @@
     color: $colour-primary;
     text-decoration: none;
   }
+}
+
+.index-title,
+.page-title {
+  max-width: 500px;
+}
+
+.page-title {
+  padding-bottom: 3rem;
 }
 
 /******
@@ -222,19 +217,20 @@
   -ms-flex-align: center;
   align-items: center;
 
-  .page-link {
+  .page-link,
+  .social-link {
     font-weight: bold;
     text-decoration: none;
     margin-left: 20px;
     border-bottom: 5px solid transparent;
 
-    &:not(:last-child) {
-      margin-right: 0;
-    }
-
     &:hover {
       border-bottom: 5px solid $colour-secondary;
     }
+  }
+
+  .page-link:first-child {
+    margin-left: 0px;
   }
 
   .site-links {
@@ -242,6 +238,12 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    @include skew(3deg);
+  }
+  .skewbg {
+    @include skew;
+    background-color: $colour-primary--dark;
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -262,7 +264,8 @@
       align-items: center;
     }
 
-    .page-link {
+    .page-link,
+    .social-link {
       padding: 1rem 1rem 0 1rem;
       margin-left: 0;
       font-size: 1.5rem;

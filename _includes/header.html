@@ -10,23 +10,25 @@
       {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths =
       site.header_pages | default: default_paths -%}
       <nav class="site-nav">
-        <a class="site-title" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
-        <div class="site-links">
-          {%- for path in page_paths -%} {%- assign nav_page = site.pages | where: "path", path |
-          first -%} {%- if nav_page.title == 'Think of the users' -%}
-          <a class="page-link" href="{{ nav_page.url | relative_url }}">Blog</a>
-          {% elsif nav_page.title %} {%- unless nav_page.exclude -%}
-          <a class="page-link" href="{{ nav_page.url | relative_url }}"
-            >{{ nav_page.title | escape }}</a
-          >
-          {%- endunless -%} {%- endif -%} {%- endfor -%}
-          <a class="page-link" href="#contact">Contact</a>
-          {% include social-links.html -%}
+        <a class="site-logo" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
+        <div class="skewbg">
+          <div class="site-links">
+            {%- for path in page_paths -%} {%- assign nav_page = site.pages | where: "path", path |
+            first -%} {%- if nav_page.title == 'Think of the users' -%}
+            <a class="page-link" href="{{ nav_page.url | relative_url }}">Blog</a>
+            {% elsif nav_page.title %} {%- unless nav_page.exclude -%}
+            <a class="page-link" href="{{ nav_page.url | relative_url }}"
+              >{{ nav_page.title | escape }}</a
+            >
+            {%- endunless -%} {%- endif -%} {%- endfor -%}
+            <a class="page-link" href="#contact">Contact</a>
+            {% include social-links.html -%}
+          </div>
         </div>
       </nav>
     </div>
     {% if page.layout == 'default' %}
-    <div>
+    <div class="index-title aligncentre">
       <h1>Hi<br />I'm a UX Developer</h1>
       <p>
         Practicing human-centred UX Design and Development, I make digital things that people like
@@ -34,7 +36,7 @@
       </p>
     </div>
     {% else %}
-    <div class="pad-tb">
+    <div class="page-title aligncentre">
       <h1>{{ page.title | escape }}</h1>
     </div>
     {%- endif -%}
