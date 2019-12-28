@@ -128,10 +128,7 @@ h4 {
   margin-top: 1.6rem;
 }
 
-h1 {
-  color: $colour-secondary;
-}
-
+h1,
 h2 {
   color: $colour-primary;
 }
@@ -333,9 +330,7 @@ button {
 }
 
 /* Top and bottom stripe decoration in 2ndry colour */
-.btn-light,
-.btn-light--ghost,
-.cta {
+.btn-light {
   &:before,
   &:after {
     @include transition;
@@ -381,12 +376,6 @@ a.btn-light {
   &:active {
     background: $colour-secondary;
   }
-}
-
-.btn-light--ghost {
-  border: $colour-primary 3px solid;
-  color: $colour-primary;
-  padding: 14px;
 }
 
 a.btn-light--text {
