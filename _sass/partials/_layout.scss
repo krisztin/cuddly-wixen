@@ -295,48 +295,37 @@ Stripes
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(150deg, $colour-primary--dark 15%, $colour-primary--light 70%);
 }
 
 .stripes span {
   &:first-child {
-    top: 30%;
-    height: 10%;
-    width: 30%;
-    left: 40%;
-    background: $colour-primary;
-    opacity: 0.8;
-  }
-
-  &:nth-child(2) {
     width: 40%;
     height: 10%;
     bottom: 0;
     background: $colour-primary;
-    opacity: 0.3;
   }
 
-  &:nth-child(3) {
-    width: 70%;
-    height: 2%;
+  &:nth-child(2) {
+    width: 90%;
+    height: 4%;
     bottom: 0;
     left: 10%;
     background: $colour-secondary;
   }
 
-  &:nth-child(4) {
+  &:nth-child(3) {
     width: 30%;
     height: 15%;
     top: 0;
     background: $colour-secondary;
   }
 
-  &:nth-child(5) {
+  &:nth-child(4) {
     width: 10%;
     height: 20%;
     bottom: 20%;
     right: 0;
-    background: $colour-primary;
+    background: $colour-secondary;
   }
 }
 
