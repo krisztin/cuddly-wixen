@@ -3,14 +3,14 @@ category: problem
 layout: portfolio
 title: Dogs in your inbox
 img: assets/img/doginbox-hp-pur.jpg
-excerpt: " Making the search for a dog to adopt easier, where everyone wins: the adopters (users), the shelter (business) and most importantly the dogs (good boys and girls)."
+excerpt: "Making the search for a dog to adopt easier, where everyone wins: the adopters (users), the shelter (business) and most importantly the dogs (good boys and girls)."
 ---
 
 ## Website
 
 <a href="https://themayhew.org/dogs" target="_blank" rel="noopener noreferrer" >The Mayhew Animal Home</a> - A dog and cat shelter in North-West London rehoming about 2 dogs per week on average.
 
-<h2><img class="svg-icon" src="{{ site.url }}/assets/img/icon-user.svg" alt="" />User persona</h2>
+## 👤 User persona
 
 **John, 47, *small business owner, lives within 10 miles***
 
@@ -28,7 +28,7 @@ excerpt: " Making the search for a dog to adopt easier, where everyone wins: the
 
 ### Shelter
 
-- The Mayhew had - on average - 4 new dogs come up for adoption in a month which was comparatively low and results in a **low percentage of returning visitors to the listing page**.
+- The Mayhew had - on average - 6 new dogs come up for adoption in a month which was comparatively low and results in a **low percentage of returning visitors to the listing page**.
 - Received 1000+ calls a month, many interested in adopting a certain type of dog. Could only tell them to keep checking the website.
 
 ## Solution?
@@ -43,13 +43,16 @@ But did they really? This was, after all the most requested service and users sh
 
 ### Call me maybe?
 
-The first rule of UX design is "Don't listen to your users" -Jakob Nielsen
+*"The first rule of UX Design is: don't listen to your users"* -Jakob Nielsen
 
 This is not to say don't listen to feedback but more about not listening to what the user is actually saying and instead try and find out why they are saying it.
 
 But first, just for the sake of argument, let's check if this idea would be feasable at all. From a business standpoint the short answer is: no.
 
-We have 1-2 people on reception (busy with several other tasks) and a single Dog Adoption Officer (similarly busy). We could train volunteers to handle these calls of course but then other questions arise:
+- We have 1-2 people on reception (busy with several other tasks) and a single Dog Adoption Officer (similarly busy).
+  
+We could train volunteers to handle these calls of course but then other questions arise:
+
 - Do we do first come first served?
 - Or do we have to do a phone screen when they ‘sign up’ and try and ascertain through the phone what kind of owners they would be (or if they even qualify for adopting a dog)?
 - This was pre-GDPR but even then maintaining a database for this purpose is messy
@@ -58,21 +61,40 @@ We have 1-2 people on reception (busy with several other tasks) and a single Dog
 
 Making a bunch of phonecalls is just not a feasible way of widening the adopter pool.
 
+### Finding the true meaning
+
+"Call me when..." just means:
+- I'm too **busy to check your website all the time** along with a handful of others
+- I really **don't want to miss out** on the dog I'm looking for
+- I **want to know as soon as you have a dog I'd like**
+
+These all indicate the need for an alert system so they can be among the firsts to be notified. For this, from a technical perspective, an automatic email system that's easy to plug into the website is the best solution and the fairest to all potential adopters.
+
 ## Solution
 
-We’ve added a CTA at the bottom of the dog and cat listing pages to invite potential adopters to sign up to our email alerts. These alerts are sent out every time an animal is published on the site.
+We've decided to try out an email listing sign up form that had low development costs and close to no running costs. These alerts were then sent out every time an animal's profile was published on the site.
 
 <img src="{{ site.url }}/assets/img/dogalert.png" alt="dog alert sign up user interface mock-up" />
 
-<h2>Results</h2>
-<p>
-  Within its first year we’ve achieved over 1000 subscribers and a consistent growth of 15% month to
-  month. A rise in returning visitors to the dog listing page.
-</p>
-<p><em>Catnotes</em></p>
-<p>
-  Whilst the CTA has been added to the cat listing pages as well due to the nature of cat adoptions
-  (people usually only have a preference of colour and age) and the relatively high volume of cats
-  the Mayhew have had, the cat alerts were less successful but still was in constant use by hundreds
-  of users every month.
-</p>
+Placement options we’ve considered:
+- **Bottom of the dog listing page to intercept people skimming all listings and are about to close the page at the end of an unsuccessful search.**
+- Sidebar of a dog’s profile page as these pages are also frequent exit pages. This real estate was already too crowded with other, more important information.
+
+## Results
+
+Within its first year we’ve achieved over 1000 subscribers and a consistent growth of 15% month-to-month along with a hefty rise in returning visitors to the dog listing page.
+
+Staff was happy because they could just direct people online to the sign up form.
+
+Adopters were happy because they got immediately notified the moment a dog was up for adoption.
+
+Dogs were happy, well, because they were all good boys and girls. And also because due to the rise in returning potential adopters to the website the days they spent in kennels were cut shorter.
+
+### Ways to improve
+Allow for filters to be set when signing up (i.e. ‘can live with cats or children’, ‘breed’ etc.)
+
+### 😺 Catnotes
+Whilst the CTA has been added to the cat listing pages as well due to the nature of cat adoptions
+(people usually only have a preference of colour and age) and the relatively high volume of cats
+the Mayhew have had, the cat alerts were less successful but still was in constant use by hundreds
+of users every month.
