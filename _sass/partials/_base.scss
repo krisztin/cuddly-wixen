@@ -195,8 +195,13 @@ img {
 
 figure {
   position: relative;
+  /*to make space for skewed figcaption*/
+  margin-top: 1rem;
   img {
     padding: 1.5rem 0;
+  }
+  @include media-query($laptop) {
+    margin-top: 0.5rem;
   }
 }
 
@@ -221,17 +226,23 @@ figure.nopad {
   }
 }
 
+figure .caption {
+  background-color: $colour-secondary;
+  padding: 0.5rem;
+  display: inline;
+  @include media-query($mobile) {
+    padding: 0.2rem;
+  }
+}
+
 figcaption {
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 0.5rem;
-  background-color: $colour-secondary;
   @include skew;
-  top: 10%;
+  top: 2.5rem;
   position: absolute;
   @include media-query($mobile) {
-    font-size: 1rem;
-    padding: 0.2rem;
+    font-size: 1.2rem;
   }
 }
 
