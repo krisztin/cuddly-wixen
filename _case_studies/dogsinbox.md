@@ -3,7 +3,7 @@ category: problem
 layout: portfolio
 title: Dogs in your inbox
 img: assets/img/doginbox-hp-pur.jpg
-excerpt: "Making the search for a dog to adopt easier, where everyone wins: the adopters (users), the shelter (business) and most importantly the dogs (good boys and girls)."
+excerpt: "<p>Making the search for a dog to adopt easier, where everyone wins: the adopters (users), the shelter (business) and most importantly the dogs (good boys and girls).</p>"
 ---
 
 ## Website
@@ -29,7 +29,12 @@ excerpt: "Making the search for a dog to adopt easier, where everyone wins: the 
 ### Shelter
 
 - The Mayhew had - on average - 6 new dogs come up for adoption in a month which was comparatively low and results in a **low percentage of returning visitors to the listing page**.
-- Received 1000+ calls a month, many interested in adopting a certain type of dog. Could only tell them to keep checking the website.
+- Received 100+ adoption related calls a month, many interested in adopting a certain type of dog. Could only tell them to keep checking the website.
+
+### 🐶 Dogs
+
+- Wants a good home.
+- Spend less time in kennels.
 
 ## Solution?
 
