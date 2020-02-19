@@ -163,10 +163,25 @@ small {
 
 ul {
   list-style: square inside url('/assets/img/ul.png');
+  p {
+    display: inline;
+  }
+}
+
+li {
+  padding-bottom: 1rem;
 }
 
 .tight {
   margin-top: 0;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
 }
 
 /**
@@ -236,10 +251,10 @@ figure .caption {
 }
 
 figcaption {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  @include skew;
-  top: 2.5rem;
+  @include skew(-2deg);
+  top: 1rem;
   position: absolute;
   @include media-query($mobile) {
     font-size: 1.2rem;
