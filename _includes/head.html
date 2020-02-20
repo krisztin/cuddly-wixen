@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {%- seo -%}
+  {%- seo -%} {%- if jekyll.environment == 'production' -%}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29392648-3"></script>
   <script>
@@ -14,7 +14,7 @@
 
     gtag('config', 'UA-29392648-3', { anonymize_ip: true })
   </script>
-
+  {%- endif -%}
   <meta property="og:image" content="{{ '/ogimage-krisztin.png' | absolute_url }}" />
   <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
