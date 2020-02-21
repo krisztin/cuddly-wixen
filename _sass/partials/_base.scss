@@ -38,6 +38,11 @@ figcaption {
   padding-bottom: 2rem;
 }
 
+::selection {
+  background: $colour-primary;
+  color: $text-colour--light;
+}
+
 /**
  * Wrapper
  */
