@@ -34,10 +34,6 @@ main {
   display: block;
 }
 
-figcaption {
-  padding-bottom: 2rem;
-}
-
 ::selection {
   background: $colour-primary;
   color: $text-colour--light;
@@ -193,9 +189,14 @@ code {
  * Images
  */
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
+}
+
+figcaption {
+  padding-bottom: 2rem;
 }
 
 /* 16:9 Aspect Ratio */
