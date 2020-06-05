@@ -13,7 +13,6 @@
         <a class="site-logo" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
         <div class="skewbg">
           <div class="site-links">
-            <!-- prettier-ignore-start -->
             {%- for path in page_paths -%} {%- assign nav_page = site.pages | where: "path", path |
             first -%} {%- if nav_page.title == 'Think of the users' -%}
             <a
@@ -37,9 +36,11 @@
     {% if page.layout == 'default' %}
     <div class="index-title aligncentre">
       <h1>Hi<br />I'm a UX Developer</h1>
+      <h2>A dev who likes users || a designer who can code</h2>
       <p>
-        Practicing human-centred UX Design and Development, I make digital things that people like
-        to use.
+        After almost ten years in social and video marketing I ran screaming from what social media
+        has become. Now, I use my skills mastered as a marketer to understand audiences and design
+        <strong>and build</strong> human-centred experiences.
       </p>
     </div>
     {% else %}
