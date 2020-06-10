@@ -6,6 +6,14 @@ exclude: true
 ---
 
 <section class="wrapper pad-tb">
-  <h2 class="aligncentre">Case Studies</h2>
+  <h2 class="aligncentre">UX Case Studies</h2>
   {% include case_studies.html %}
+</section>
+
+<section class="pad-tb">
+  <h2 class="aligncentre">My UX rants</h2>
+  <div class="flex-container just-even posts">
+    {%- for post in site.posts -%} {% if post %} {% assign tags = post.tags %}{% endif %} {% if
+    post.featured == true%} {% include blog-articles.html %} {% endif %} {%- endfor -%}
+  </div>
 </section>
