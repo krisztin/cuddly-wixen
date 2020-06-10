@@ -19,7 +19,7 @@ When I moved to the UK I was delighted to learn you could work in the non-profit
 
 Despite of having grown up on the likes of Blackadder and being taught the intricacies of British life in school, I had to realise that I still missed a lot of the pop cultural references a marketing professional should be familiar with and hence could never be an effective marketer. Being involved in managing the website, however, I’ve found that there was one thing that was universal: technology.
 
-<p class="skim">I've always thoroughly enjoyed solving real-life problems of real-life people with digital products.</p>
+<p class="skim">I've always thoroughly enjoyed solving real-life problems with digital products.</p>
 
 My job has allowed me to get a taste of UX development and I was immediately taken to it.
 
