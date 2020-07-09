@@ -13,7 +13,7 @@ From videos to social media posts, emails and websites this digital veteran has 
 
 ## From kittens to code
 
-When I moved to the UK I was delighted to learn you could work in the non-profit sector and did so as a Digital Officer for The Mayhew Animal Home. The position was a mix of digital marketing and web development.
+When I moved to the UK I was delighted to learn you could work in the non-profit sector and did so as a Website and Digital Officer for The Mayhew Animal Home. The position was a mix of digital marketing and web development.
 
 {% include img.html file='teapawty.jpg' alt='kitten teapawty' caption='Filming kittens: the career I’ve given up' %}
 
@@ -22,6 +22,9 @@ Despite of having grown up on the likes of Blackadder and being taught the intri
 <p class="skim">I've always thoroughly enjoyed solving real-life problems with digital products.</p>
 
 My job has allowed me to get a taste of UX development and I was immediately taken to it.
+
+## I ❤️ <span class="a11ytxt">love</span> accessibility
+**Accessibility is not just about screen readers** and blind users and maybe not forgetting about proper contrast levels. It is so much more. It’s about properly sized touch targets, thinking about slow internet connections and readability, to name a few... When done right accessibility actually **adds a lot to the general usability of your interface**.
 
 ## Behind the scenes
 On the rare occasions when I am not sitting in front of my computer going on yet another Wikipedia binge, I venture outside either to cycle or to hike with the husband.
