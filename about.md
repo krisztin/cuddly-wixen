@@ -24,9 +24,9 @@ Despite of having grown up on the likes of Blackadder and being taught the intri
 My job has allowed me to get a taste of UX development and I was immediately taken to it.
 
 ## I ❤️ <span class="a11ytxt">love</span> accessibility
-**Accessibility is not just about screen readers** and blind users and maybe not forgetting about proper contrast levels. It is so much more. It’s about properly sized touch targets, thinking about slow internet connections and readability, to name a few... When done right accessibility actually **adds a lot to the general usability of your interface**.
+**Accessibility is not just about screen readers**, blind users and not forgetting about proper contrast levels. It is so much more. It’s about properly sized touch targets, thinking about slow internet connections and readability, to name a few... When done right accessibility actually **adds a lot to the usability of your interface**.
 
 ## Behind the scenes
-On the rare occasions when I am not sitting in front of my computer going on yet another Wikipedia binge, I venture outside either to cycle or to hike with the husband.
+Avid hiker, rower and biker (but still spend way too much time sitting in front of the computer), lover of science fiction...never seen Star Wars.
 
 {% include img.html file='bacsi.jpg' alt='coloured black and white photo' caption="Oh and I also colour. With Photoshop because it's easier to stay in the lines there." %}
