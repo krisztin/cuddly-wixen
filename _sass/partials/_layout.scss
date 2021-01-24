@@ -47,6 +47,15 @@
   overflow: hidden;
 }
 
+.float--left {
+  display: none;
+  @media screen and (min-width: 500px) {
+    display: block;
+    float: left;
+    padding-right: 1rem;
+  }
+}
+
 .flex-container {
   @include flex;
   -ms-flex-wrap: wrap;
