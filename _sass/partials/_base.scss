@@ -246,19 +246,26 @@ figure {
   }
 }
 
+figure.img--mobile,
+figure.img--small,
+figure.img--xsmall {
+  margin: auto;
+}
+
 figure.img--small {
   max-width: $content-width/2;
-  margin: auto;
 }
 
 figure.img--xsmall {
   max-width: $content-width/4;
-  margin: auto;
 }
 
 figure.img--mobile {
   max-width: 350px;
-  margin: auto;
+}
+
+figure.img--xxsmall {
+  max-width: 200px;
 }
 
 figure.nopad {
