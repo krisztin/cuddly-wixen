@@ -4,32 +4,32 @@
 >
   <div class="flex-item two-col">
     <div
-      class="
-      {% if forloop.index == 1 %}
-       stripe-right--secondary
-      {% else %}
-        stripe-left--secondary
-      {% endif %}"
+      class="{% if forloop.index == 1 %} stripe-right--secondary {% else %} stripe-left--secondary {% endif %}"
     ></div>
     <h3>
       <a href="{{ study.url }}" aria-label="case study" target="_self">{{ study.title }} </a>
     </h3>
     {{ study.excerpt }}
     <div class="inline">
-      <a class="btn btn-light" href="{{ study.url }}" target="_self" aria-hidden="true"
+      <a
+        class="btn btn-light"
+        href="{{ study.url }}"
+        target="_self"
+        aria-hidden="true"
+        tabindex="-1"
         >Case study</a
       >
     </div>
   </div>
   <div class="flex-item two-col">
-    <a href="{{ study.url }}" aria-hidden="true" target="_self">
+    <a href="{{ study.url }}" aria-hidden="true" tabindex="-1" target="_self">
       <img class="case-img" src="{{ site.url }}/{{ study.img }}" alt="" />
     </a>
   </div>
 </article>
 {%else%}
 <article class="pad-tb">
-  <a href="{{ study.url }}" aria-hidden="true" target="_self">
+  <a href="{{ study.url }}" aria-hidden="true" tabindex="-1" target="_self">
     <img src="{{ site.url }}/{{ study.img }}" alt="" />
     <h3 class="tight">{{ study.title }}</h3>
   </a>
