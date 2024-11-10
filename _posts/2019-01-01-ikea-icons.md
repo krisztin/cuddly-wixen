@@ -2,7 +2,7 @@
 layout: post
 featured: true
 img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1574285277/krisztin/thumb-ikea-series1_idhxpq.png
-title: 'Icons are off the menu - IKEA Facelift #1'
+title: "Icons are off the menu - IKEA Facelift #1"
 date: 2017-08-01 11:15:06 +0100
 tags: [IKEA, rant, web, a11y]
 excerpt: The good news? Now you can get lost on IKEA's website the same way you do in their stores.
@@ -42,7 +42,7 @@ Icons also make good targets for touch and make recognition faster.
 
 ## Conclusion
 
-Yes, UX research shows that icons are not terribly useful...on their own! Don't believe me? Let's see then what a slightly more well-known person in UX has had to say about this topic:
+Yes, UX research shows that icons are not terribly useful...on their own! Don't believe me? Let's see then what a slightly more well-known person in UX has to say about this topic:
 
 <p class="skim">“Icon plus label is superior to icon alone or label alone. “ - Don Norman</p>
 
