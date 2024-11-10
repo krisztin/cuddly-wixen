@@ -2,13 +2,13 @@
 layout: post
 featured: true
 img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1574253223/krisztin/thumb-stravarec_hmuyff.png
-title: 'Strava tap dance'
+title: "Strava tap dance"
 date: 2017-08-01 11:15:06 +0100
 tags: [Strava, rant, app, a11y]
-excerpt: '4 screens, 3 taps and more than 10 seconds from opening the app to the start of recording. Is that bad? Yes, yes it is.'
+excerpt: "4 screens, 3 taps and more than 10 seconds from opening the app to the start of recording. Is that bad? Yes, yes it is."
 ---
 
-Let me paint you a picture here, a context of use if you will: I’m sitting on my bike, ready for an epic ride. But wait, _a ride does not happen if it’s not on Strava_. It’s kind of a tree falling in the woods thing amongst us cyclists. So I whip my phone out, all ready to roll I start what I not so affectionately call:
+Let me paint you a picture here, a context of use if you will: I’m sitting on my bike, ready for an epic ride. But wait, _a ride does not happen if it’s not on Strava!_ It’s kind of a tree falling in the woods thing amongst us cyclists. So I whip my phone out, all ready to roll I start what I not so affectionately call:
 
 ## “The Strava tap dance”
 
@@ -48,7 +48,7 @@ Once you've tapped START you get the final recording screen. Tired already? I am
 
 #### Cold context
 
-I am one of those insane people who ride when it’s cold outside. My winter gloves are as “screen-friendly” as they can be, which means 1 tap often becomes 5 before it finally registers, hence the more steps the more taps until I’ve had enough of wildly fingering my phone and rip off my gloves. The end result: frozen hand, recording started, doing some additional gymnastics to put the glove back on which is an artform in sub-zero temperatures.
+I am one of those insane people who ride even when it’s cold outside. My winter gloves are as “screen-friendly” as they can be, which means 1 tap often becomes 5 before it finally registers, hence the more steps the more taps until I’ve had enough of wildly fingering my phone and rip off my gloves. The end result: frozen hand, recording started, doing some additional gymnastics to put the glove back on which is an artform in sub-zero temperatures.
 
 #### Accessibility note
 
@@ -75,5 +75,3 @@ To record your _default activity_:
 To record your _default activity_:
 
 - 1 tap
-
-From a **technical perspective**, I recognise this would introduce the question of when to acquire the GPS co-ordinates which in the current flow happens on the _Record Activity_ screen. I have recently watched a video on introducing Machine Learning into UX which in this context would be for the app to learn when the user usually records activities and if the app is switched on around those times then it would automatically fetch GPS data on load.
