@@ -7,7 +7,7 @@
       class="{% if forloop.index == 1 %} stripe-right--secondary {% else %} stripe-left--secondary {% endif %}"
     ></div>
     <h3>
-      <a href="{{ study.url }}" aria-label="case study" target="_self">{{ study.title }} </a>
+      <a href="{{ study.url }}" target="_self">{{ study.title }} </a>
     </h3>
     {{ study.excerpt }}
     <div class="inline">
@@ -23,7 +23,7 @@
   </div>
   <div class="flex-item two-col">
     <a href="{{ study.url }}" aria-hidden="true" tabindex="-1" target="_self">
-      <img class="case-img" src="{{ site.url }}/{{ study.img }}" alt="" />
+      <img class="case-img" src="{{ site.url }}/{{ study.img }}" alt="" aria-hidden="true"/>
     </a>
   </div>
 </article>
